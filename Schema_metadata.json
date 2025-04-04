@@ -1,14 +1,52 @@
 {
-  "SF_EXEC_DETAIL_DASHBOARD": {
-    "columns": [
-      "SKU_ID",
-      "SALES_UNITS",
-      "TRANSACTION_ID",
-      "STORE_NO",
-      "SALES_NET_AMOUNT",
-      "TRANSACTION_DATE",
-      "COGS",
-      "OWN_BRAND"
-    ],
-    "table_name": "SF_EXEC_DETAIL_DASHBOARD"}
+  "name": "VIT_SCHEMA",
+  "tables": {
+    "First_table_name": {
+      "name": "SF_EXEC_DETAIL_DASHBOARD",
+      "columns": [
+        {
+          "name": "OWN_BRAND",
+          "type": "VARGRAPHIC",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "STORE_NO",
+          "type": "VARCHAR",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "SALES_NET_AMOUNT",
+          "type": "DECIMAL",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "TRANSACTIONS",
+          "type": "DECIMAL",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "TRANSACTIONS_TOTAL",
+          "type": "DECIMAL",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "SALES_UNITS",
+          "type": "DECIMAL",
+          "primary_key": "False",
+          "foreign_key": "null"
+        },
+        {
+          "name": "COGS",
+          "type": "DECIMAL",
+          "primary_key": "False",
+          "foreign_key": "null"
+        }
+      ]
+    }
+  }
 }
