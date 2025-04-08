@@ -1,52 +1,659 @@
 {
-  "name": "VIT_SCHEMA",
-  "tables": {
-    "First_table_name": {
-      "name": "SF_EXEC_DETAIL_DASHBOARD",
-      "columns": [
-        {
-          "name": "OWN_BRAND",
-          "type": "VARGRAPHIC",
-          "primary_key": "False",
-          "foreign_key": "null"
+    "name": "VIT_SCHEMA",
+    "tables": {
+        "SF_EXEC_DETAIL_DASHBOARD": {
+            "name": "SF_EXEC_DETAIL_DASHBOARD",
+            "columns": [
+                {
+                    "name": "TRANSACTION_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OWN_BRAND",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SALES_NET_AMOUNT",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "TRANSACTIONS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "TRANSACTIONS_TOTAL",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SALES_UNITS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "COGS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         },
-        {
-          "name": "STORE_NO",
-          "type": "VARCHAR",
-          "primary_key": "False",
-          "foreign_key": "null"
+        "SF_INVENTORY_MANAGEMENT_DASHBOARD_ITEM_SERVICE_LEVEL": {
+            "name": "SF_INVENTORY_MANAGEMENT_DASHBOARD_ITEM_SERVICE_LEVEL",
+            "columns": [
+                {
+                    "name": "CALENDAR_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SERVICING_DC",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_NO",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SALES_EIGHT_WEEKS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ALLOCATED_QUANTITY",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OH_COST",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OH_UNITS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ON_ORDER_DOLLARS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ON_ORDER_UNITS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "TOTAL_SALES",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "TOTAL_UNITS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "COGS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "IN_STOCK",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SKU_COUNT",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "IN_STOCK_COUNT_ON_ORDER",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "FACING",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "IN_STOCK_COUNT_FACING",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "IN_TRANSIT",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "IN_TRANSIT_DOLLARS",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DATE_LAST_ORDERED",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "PO_OVERRIDE_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DATE_LAST_RECEIVED",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STATUS_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "HAZARD_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "PROMOTION_TYPE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SKU_ID",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ON_HOLD_QUANTITY",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         },
-        {
-          "name": "SALES_NET_AMOUNT",
-          "type": "DECIMAL",
-          "primary_key": "False",
-          "foreign_key": "null"
+        "SF_DISTRICT_SA_V": {
+            "name": "SF_DISTRICT_SA_V",
+            "columns": [
+                {
+                    "name": "DISTRICT_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DISTRICT_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         },
-        {
-          "name": "TRANSACTIONS",
-          "type": "DECIMAL",
-          "primary_key": "False",
-          "foreign_key": "null"
+        "SF_MSTR_CALENDAR": {
+            "name": "SF_MSTR_CALENDAR",
+            "columns": [
+                {
+                    "name": "CALENDAR_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DAYOFWEEK",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "LY_CALENDAR_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_WEEK_SEQUENCE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_WEEK_ENDING",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_MONTH_SEQUENCE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "FISCAL_MONTH_DISPLAY",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_SEASON_SEQUENCE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_YEAR_SEQUENCE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_WEEK_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_MONTH_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_YEAR_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_SEASON_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "WEEK_END_FLAG",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MONTH_END_FLAG",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "YEAR_END_FLAG",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_WEEK_CUSTOM",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_MONTH_CUSTOM",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_YEAR_CUSTOM",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISE_SEASON_CUSTOM",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DAYOFDATE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "LY_LY_CALENDAR_DATE",
+                    "type": "DATE",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "HOLIDAYS",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         },
-        {
-          "name": "TRANSACTIONS_TOTAL",
-          "type": "DECIMAL",
-          "primary_key": "False",
-          "foreign_key": "null"
+        "SF_STORE_SA_V": {
+            "name": "SF_STORE_SA_V",
+            "columns": [
+                {
+                    "name": "STORE_NO",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_SHORT_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_STATUS_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STORE_MANAGER",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SELLING_PRICE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OPEN_PERIOD",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "COMP_PERIOD",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "CLOSED_DATE",
+                    "type": "TIMESTAMP",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SELLING_NONSELLING_FLAG",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DIVISION_CODE",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "REGION_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DISTRICT_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "PHONE_NO",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "TIME_STAMP",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "LOCATION_ID",
+                    "type": "DECIMAL",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "COMP_DATE",
+                    "type": "TIMESTAMP",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OPEN_DATE",
+                    "type": "TIMESTAMP",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "OPEN_TO_RECIEVE_DATE",
+                    "type": "TIMESTAMP",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SETTLEMENT_BILLING_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "COUNTRY_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "CITY",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "STATE_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ZIP_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         },
-        {
-          "name": "SALES_UNITS",
-          "type": "DECIMAL",
-          "primary_key": "False",
-          "foreign_key": "null"
-        },
-        {
-          "name": "COGS",
-          "type": "DECIMAL",
-          "primary_key": "False",
-          "foreign_key": "null"
+        "SF_SKU_CATEGORIES": {
+            "name": "SF_SKU_CATEGORIES",
+            "columns": [
+                {
+                    "name": "SKU_DESCRIPTION",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "VENDOR_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "VENDOR_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "BRAND",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "DEPARTMENT",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SUBDEPARTMENT",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "CLASS",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SUBCLASS",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "RETAIL_PLACEMENT",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "SERVING_SIZE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "NUMBER_SERVINGS",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "FORM",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ASSORTMENT_CODE",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "ITEMS_NOT_ON_WEB",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "CATEGORY",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MERCHANDISER_NAME",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "AMOUNT_PER_ITEM",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "MANUFS_NUMBER",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "UOM",
+                    "type": "VARGRAPHIC",
+                    "primary_key": false,
+                    "foreign_key": null
+                },
+                {
+                    "name": "CHILD_SKU",
+                    "type": "VARCHAR",
+                    "primary_key": false,
+                    "foreign_key": null
+                }
+            ]
         }
-      ]
     }
-  }
 }
